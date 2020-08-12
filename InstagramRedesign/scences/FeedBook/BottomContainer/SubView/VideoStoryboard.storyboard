@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="video" id="BYZ-38-t0r" customClass="VideoViewController" customModule="InstagramRedesign" customModuleProvider="___VARIABLE_ibCustomModuleProvider___" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0n-ty-bAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="92e-tP-t1Y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="92e-tP-t1Y" firstAttribute="trailing" secondItem="sON-sF-oiO" secondAttribute="trailing" id="70k-KJ-wyv"/>
+                            <constraint firstItem="92e-tP-t1Y" firstAttribute="top" secondItem="sON-sF-oiO" secondAttribute="top" id="AmU-n3-zKV"/>
+                            <constraint firstItem="92e-tP-t1Y" firstAttribute="leading" secondItem="sON-sF-oiO" secondAttribute="leading" id="erK-ix-RdZ"/>
+                            <constraint firstItem="sON-sF-oiO" firstAttribute="bottom" secondItem="92e-tP-t1Y" secondAttribute="bottom" id="mdA-6I-P8g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sON-sF-oiO"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainVideoTableView" destination="92e-tP-t1Y" id="e8R-L0-ILi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>

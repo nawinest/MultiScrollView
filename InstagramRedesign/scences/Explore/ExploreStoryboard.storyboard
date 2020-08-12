@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="explore" id="BYZ-38-t0r" customClass="ExploreViewController" customModule="InstagramRedesign" customModuleProvider="___VARIABLE_ibCustomModuleProvider___" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0n-ty-bAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sw1-3i-G97">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sON-sF-oiO" firstAttribute="trailing" secondItem="Sw1-3i-G97" secondAttribute="trailing" id="23n-j6-Wqy"/>
+                            <constraint firstItem="Sw1-3i-G97" firstAttribute="top" secondItem="sON-sF-oiO" secondAttribute="top" id="5pd-Qb-ACE"/>
+                            <constraint firstItem="Sw1-3i-G97" firstAttribute="leading" secondItem="sON-sF-oiO" secondAttribute="leading" id="CUS-hI-QBK"/>
+                            <constraint firstItem="sON-sF-oiO" firstAttribute="bottom" secondItem="Sw1-3i-G97" secondAttribute="bottom" id="GKd-xs-A30"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sON-sF-oiO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="66"/>
+        </scene>
+    </scenes>
+</document>

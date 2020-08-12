@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerStory" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="InstagramRedesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siE-Lu-YEU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bWY-bE-EO8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="teR-hu-97A">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="bWY-bE-EO8" firstAttribute="top" secondItem="siE-Lu-YEU" secondAttribute="top" id="Daq-2m-aWa"/>
+                        <constraint firstAttribute="trailing" secondItem="bWY-bE-EO8" secondAttribute="trailing" id="Iql-ws-URZ"/>
+                        <constraint firstAttribute="bottom" secondItem="bWY-bE-EO8" secondAttribute="bottom" id="UH9-Mp-eZO"/>
+                        <constraint firstItem="bWY-bE-EO8" firstAttribute="leading" secondItem="siE-Lu-YEU" secondAttribute="leading" id="WQ1-yt-3zm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="siE-Lu-YEU" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="GfN-n2-ceA"/>
+                <constraint firstItem="siE-Lu-YEU" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="d2l-k7-tPU"/>
+                <constraint firstAttribute="bottom" secondItem="siE-Lu-YEU" secondAttribute="bottom" id="i8w-4t-g2e"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="siE-Lu-YEU" secondAttribute="trailing" id="r8g-EY-ChP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="mainCollectionView" destination="bWY-bE-EO8" id="lly-fx-Hfm"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+        </collectionReusableView>
+    </objects>
+</document>

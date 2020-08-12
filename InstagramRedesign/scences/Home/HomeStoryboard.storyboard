@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="InstagramRedesign" customModuleProvider="___VARIABLE_ibCustomModuleProvider___" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0n-ty-bAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0V-ii-fP6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HNp-t6-PXp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LB1-rs-ama">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KgR-v6-zVH">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DUc-zC-pjS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HNp-t6-PXp" firstAttribute="leading" secondItem="H0V-ii-fP6" secondAttribute="leading" id="9Jm-TW-DvJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="HNp-t6-PXp" secondAttribute="bottom" id="B0U-l6-06W"/>
+                                    <constraint firstAttribute="trailing" secondItem="HNp-t6-PXp" secondAttribute="trailing" id="L7n-9n-hYj"/>
+                                    <constraint firstItem="HNp-t6-PXp" firstAttribute="top" secondItem="H0V-ii-fP6" secondAttribute="top" id="qgf-VZ-WaN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sON-sF-oiO" firstAttribute="bottom" secondItem="H0V-ii-fP6" secondAttribute="bottom" id="SzI-DH-ZbL"/>
+                            <constraint firstItem="sON-sF-oiO" firstAttribute="trailing" secondItem="H0V-ii-fP6" secondAttribute="trailing" id="YtO-aj-Qld"/>
+                            <constraint firstItem="H0V-ii-fP6" firstAttribute="top" secondItem="sON-sF-oiO" secondAttribute="top" id="aNP-9w-f7k"/>
+                            <constraint firstItem="H0V-ii-fP6" firstAttribute="leading" secondItem="sON-sF-oiO" secondAttribute="leading" id="lBI-Iy-Fm4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sON-sF-oiO"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="HNp-t6-PXp" id="r7x-iS-bKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="130"/>
+        </scene>
+    </scenes>
+</document>

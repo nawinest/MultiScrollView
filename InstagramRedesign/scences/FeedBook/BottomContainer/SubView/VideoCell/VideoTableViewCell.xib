@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="165" id="KGk-i7-Jjw" customClass="VideoTableViewCell" customModule="InstagramRedesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-4U-fRG">
+                        <rect key="frame" x="0.0" y="0.0" width="323" height="165"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="B3G-75-esM">
+                                <rect key="frame" x="8" y="32.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="62E-iN-SnL"/>
+                                    <constraint firstAttribute="width" constant="100" id="q3S-h5-ad1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ทดสอบ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIL-K0-aon">
+                                <rect key="frame" x="116" y="8" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum toncat kopiko pjots lorem ipsum toncat kopiko pjots lorem ipsum toncat kopiko pjots " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acG-dI-yrl">
+                                <rect key="frame" x="116" y="37" width="199" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B3G-75-esM" firstAttribute="centerY" secondItem="AIP-4U-fRG" secondAttribute="centerY" id="DBN-K2-ug6"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="acG-dI-yrl" secondAttribute="bottom" constant="8" id="EIx-IN-IKV"/>
+                            <constraint firstItem="acG-dI-yrl" firstAttribute="leading" secondItem="B3G-75-esM" secondAttribute="trailing" constant="8" id="LAs-Kt-2gY"/>
+                            <constraint firstItem="sIL-K0-aon" firstAttribute="leading" secondItem="B3G-75-esM" secondAttribute="trailing" constant="8" id="QvV-n7-zGM"/>
+                            <constraint firstItem="sIL-K0-aon" firstAttribute="top" secondItem="AIP-4U-fRG" secondAttribute="top" constant="8" id="SIm-CH-Qq4"/>
+                            <constraint firstAttribute="trailing" secondItem="acG-dI-yrl" secondAttribute="trailing" constant="8" id="a3J-mn-P5a"/>
+                            <constraint firstItem="B3G-75-esM" firstAttribute="leading" secondItem="AIP-4U-fRG" secondAttribute="leading" constant="8" id="e98-Xe-lyL"/>
+                            <constraint firstItem="acG-dI-yrl" firstAttribute="top" secondItem="sIL-K0-aon" secondAttribute="bottom" constant="8" id="eB1-Vd-RWg"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="B3G-75-esM" secondAttribute="bottom" constant="8" id="ffi-nU-c3r"/>
+                            <constraint firstAttribute="trailing" secondItem="sIL-K0-aon" secondAttribute="trailing" constant="8" id="nmM-so-y0I"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AIP-4U-fRG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1To-66-TcA"/>
+                    <constraint firstAttribute="trailing" secondItem="AIP-4U-fRG" secondAttribute="trailing" id="B6K-Y3-SDf"/>
+                    <constraint firstAttribute="bottom" secondItem="AIP-4U-fRG" secondAttribute="bottom" id="ZaS-an-Iei"/>
+                    <constraint firstItem="AIP-4U-fRG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aQ8-1P-geH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="content" destination="acG-dI-yrl" id="Phi-bi-nqb"/>
+                <outlet property="header" destination="sIL-K0-aon" id="1Cm-Oj-Mt2"/>
+            </connections>
+            <point key="canvasLocation" x="139.85507246376812" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" width="44" height="44"/>
+    </resources>
+</document>
